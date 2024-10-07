@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<title>Verkefni 2</title>
+		<link href="style.css" rel="stylesheet"/>
 		<script type="text/javascript" src="webgl-utils.js"></script>
 		<script type="text/javascript" src="MV.js"></script>
+		<script type="module" src="conway.js"></script>
+		<script type="module">
+			import { init } from './conway.js';
+			addEventListener('load', init);
+		</script>
 	</head>
 	<body>
-		<canvas width="512" height="512"></canvas>
+		<main><canvas width="512" height="512"></canvas></main>
 	</body>
 </html>
